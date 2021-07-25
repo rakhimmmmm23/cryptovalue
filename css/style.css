@@ -1,0 +1,634 @@
+body {
+  background-color: #0d0d2b;
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  margin-top: 32px;
+}
+
+.header-container {
+  max-width: 1192px;
+  width: 100%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #ffff;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  margin-right: 40px;
+}
+
+.cherta {
+  margin-right: 15px;
+  width: 24px;
+  height: 0px;
+
+  opacity: 0.3;
+  border: 1px solid #f2f2f2;
+  transform: rotate(90deg);
+}
+
+.menu-btn {
+  padding: 14px 32px;
+  background: #3671e9;
+  border-radius: 32px;
+  box-shadow: 2px 2px 2px 1px aqua;
+  transition: 0.2s linear;
+}
+
+.menu-btn:hover {
+  box-shadow: 4px 4px 4px 3px aqua;
+}
+
+.secure {
+  margin-top: 90px;
+}
+
+.secure-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+
+.secure-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+}
+
+.secure-titles {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 32px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 32px;
+  width: 365px;
+  height: 40px;
+  text-align: center;
+}
+
+.secure-title {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #0d0d2b;
+  margin: 0px 10px;
+  padding: 4px 16px;
+  background-color: #fff;
+  border-radius: 32px;
+}
+
+.secure-title2 {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 175% */
+
+  letter-spacing: 0.01em;
+
+  /* Neutral / White */
+
+  color: #ffffff;
+  margin-right: 5px;
+}
+
+.secure-subtitle {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 76px;
+
+  /* Neutral / White */
+
+  color: #ffffff;
+}
+
+.secure-suptitle {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  letter-spacing: 0.01em;
+  width: 435px;
+  height: 56px;
+
+  color: #e0e0e0;
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+
+.header-btn {
+  padding: 16px 24px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  box-shadow: 2px 2px 2px 1px aqua;
+
+  /* identical to box height, or 27px */
+
+  text-align: center;
+
+  /* Neutral / White */
+
+  color: #ffffff;
+  background: #3671e9;
+  border-radius: 32px;
+  transition: 0.1s linear;
+}
+
+.header-btn:hover {
+  box-shadow: 4px 4px 4px 4px aqua;
+}
+
+.prices {
+  margin-top: 150px;
+}
+
+.prices-container {
+  max-width: 1192px;
+  width: 100%;
+  margin: auto;
+}
+
+.prices-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.price-title {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 150%;
+  /* identical to box height, or 60px */
+
+  /* Neutral / White */
+
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.price-suptitle {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 175% */
+
+  letter-spacing: 0.01em;
+
+  /* Neutral / Grey 5 */
+
+  color: #e0e0e0;
+  margin-left: 10px;
+}
+
+.check-container {
+  max-width: 1192px;
+  width: 100%;
+  margin: auto;
+}
+
+.check {
+  margin-top: 150px;
+}
+
+.check-title {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 150%;
+  /* identical to box height, or 60px */
+  text-align: center;
+  /* Neutral / White */
+
+  color: #ffffff;
+}
+
+.check-suptitle {
+  margin-top: 40px;
+  height: 54px;
+
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #e0e0e0;
+}
+
+.white-board {
+  width: 100%;
+  max-width: 942px;
+  height: 155px;
+  margin: auto;
+  background: #fbfcfe;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.white-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 62px 64px;
+}
+
+.white-first {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 150%;
+  /* identical to box height, or 30px */
+
+  color: #0d0d2b;
+
+  mix-blend-mode: normal;
+}
+
+.white-second {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 150%;
+  /* identical to box height, or 30px */
+
+  /* Color / Primary */
+
+  color: #0d0d2b;
+
+  mix-blend-mode: normal;
+}
+
+.white-btn {
+  padding: 16px 32px;
+
+  /* Color / Accent */
+
+  background: #3671e9;
+  border-radius: 32px;
+  transition: linear 0.2s;
+}
+
+.white-btn:hover {
+  background-color: azure;
+  color: #3671e9;
+}
+
+.bitcoin {
+  background-color: #fff;
+}
+
+.bitcoin-price-container {
+  width: 942px;
+  height: 216px;
+  margin: auto;
+  /* Neutral / White */
+
+  background: #ffffff;
+
+  box-shadow: 0px 20px 20px #391777;
+  border-radius: 0px 0px 16px 16px;
+}
+
+.bitcoin-price-block {
+  padding-top: 48px;
+  padding-left: 49px;
+}
+
+.bitcoin-price-title {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #3671e9;
+}
+
+.bitcoin-price-suptitle {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 150%;
+  /* identical to box height, or 48px */
+
+  letter-spacing: 0.04em;
+  padding-top: 10px;
+  /* Color / Primary */
+
+  color: #0d0d2b;
+}
+
+.bitcoin-price-subtitle {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 175% */
+
+  letter-spacing: 0.01em;
+
+  /* Neutral / Grey 3 */
+
+  color: #828282;
+  padding-top: 10px;
+}
+
+.bitcoin-container {
+  max-width: 1200px;
+  width: 100%;
+  padding-bottom: 100px;
+  margin: auto;
+}
+
+.bitcoin-title {
+  height: 120px;
+  margin-top: 130px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+
+  /* or 60px */
+
+  text-align: center;
+
+  color: #0d0d2b;
+}
+
+.bitcoin-block:first-child {
+  width: 370px;
+  height: 433px;
+
+  background: #2b076e;
+  backdrop-filter: blur(250px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 16px;
+  text-align: center;
+}
+
+.bitcoin-logo {
+  padding-top: 46px;
+}
+
+.bitcoin-block-title {
+  padding-top: 30px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 150%;
+  /* identical to box height, or 48px */
+
+  /* Neutral / White */
+
+  color: #ffffff;
+}
+
+.bitcoin-suptitle {
+  width: 322px;
+  height: 56px;
+
+  /* Body / Small - Regular */
+
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  letter-spacing: 0.01em;
+
+  /* Neutral / White */
+  padding-bottom: 95px;
+  color: #ffffff;
+}
+
+.bitcoin-btn {
+  padding: 16px 16px 16px 24px;
+
+  width: 205px;
+  height: 64px;
+
+  /* Color / Accent */
+
+  background: #3671e9;
+  border-radius: 32px;
+}
+
+.bitcoin-flex {
+  display: flex;
+}
+
+.etheruim-block {
+  margin-left: 30px;
+  width: 370px;
+  height: 433px;
+
+  /* Neutral / White */
+
+  background: #ffffff;
+
+  box-shadow: 0px 40px 40px #391777;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.etheruim-logo {
+  padding-top: 46px;
+}
+
+.etheruim-block-title {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 150%;
+  /* identical to box height, or 48px */
+
+  text-align: center;
+
+  /* Color / Primary */
+
+  color: #0d0d2b;
+}
+
+.etheruim-suptitle {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  text-align: center;
+  letter-spacing: 0.01em;
+
+  /* Neutral / Grey 3 */
+
+  color: #828282;
+  padding-bottom: 67px;
+}
+
+.etheruim-btn {
+  padding: 16px 16px 16px 24px;
+
+  width: 205px;
+  height: 64px;
+
+  /* Color / Accent */
+
+  background: #3671e9;
+  border-radius: 32px;
+}
+
+footer {
+}
+
+.footer-container {
+  width: 1200px;
+  height: 216px;
+  margin: auto;
+  margin-top: 88px;
+
+  background: #3671e9;
+  border-radius: 16px;
+}
+
+.footer-element {
+  padding: 49px 48px 0px 48px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.first-title {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 150%;
+  /* identical to box height, or 48px */
+
+  /* Neutral/White */
+
+  color: #ffffff;
+
+  mix-blend-mode: normal;
+}
+
+.first-suptitle {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+  width: 348px;
+
+  letter-spacing: 0.01em;
+
+  /* Neutral/White */
+
+  color: #ffffff;
+
+  mix-blend-mode: normal;
+}
+
+.footer-input {
+  background-color: #3671e9;
+  padding-bottom: 7px;
+  border: 1px solid #3671e9;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 175% */
+
+  letter-spacing: 0.01em;
+
+  color: #ffffff;
+
+  mix-blend-mode: normal;
+  border: 1px solid #fff;
+  padding: 15px 45px;
+}
+
+.footer-btn {
+  margin-left: 50px;
+  padding: 14px 32px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  /* identical to box height, or 27px */
+
+  text-align: center;
+
+  /* Color / Primary */
+
+  color: #0d0d2b;
+  width: 152px;
+  height: 55px;
+
+  /* Neutral/White */
+
+  background: #ffffff;
+  border-radius: 32px;
+}
